@@ -1,5 +1,5 @@
 package theater;
 
-public class CDPlayer {
+public class CDPlayer extends Device{
 
 }
