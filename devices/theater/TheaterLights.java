@@ -1,12 +1,8 @@
 package theater;
 
-public class TheaterLights {
+public class TheaterLights extends Device{
 
-	public void on() {
-		
-	}
-
-	public void dim(int i) {
+	public void dim(int value) {
 		
 	}
 

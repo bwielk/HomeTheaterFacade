@@ -1,5 +1,5 @@
 package theater;
 
-public class Tuner {
+public class Tuner extends Device{
 
 }

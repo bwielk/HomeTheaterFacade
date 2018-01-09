@@ -6,20 +6,20 @@ public class DVDplayer extends Device{
 	boolean isEjected = false;
 	
 	public String stop() {
-		if(movieOn == true){
+		if(movieOn){
 			movieOn = false;
 		}
 		return "The movie has been stopped";
 	}
 
 	public void eject() {
-		if(movieOn == false){
+		if(!movieOn){
 			isEjected = true;
 		}
 	}
 
 	public String playMovie(String movieName) {
-		if(movieOn == false){
+		if(!movieOn){
 			movieOn = true;
 			return movieName + " is playing";
 		}

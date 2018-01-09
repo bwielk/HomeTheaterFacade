@@ -1,6 +1,6 @@
 package theater;
 
-public class Screen {
+public class Screen extends Device{
 
 	public void up() {
 		

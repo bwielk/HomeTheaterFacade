@@ -1,17 +1,23 @@
 package theater;
 
-public class Projector {
+public class Projector extends Device{
+	
+	boolean wideScreenModeOn = false;
 
-	public void on() {
-		
+	public void wideScreenModeOn() {
+		if(!wideScreenModeOn){
+			wideScreenModeOn = true;
+		}
+	}
+	
+	public void wideScreenModeOff() {
+		if(wideScreenModeOn){
+			wideScreenModeOn = false;
+		}
 	}
 
-	public void off() {
-		
-	}
-
-	public void wideScreenMode() {
-		
+	public boolean isWideScreenModeOn() {
+		return wideScreenModeOn;
 	}
 
 }

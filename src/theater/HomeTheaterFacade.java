@@ -5,7 +5,6 @@ public class HomeTheaterFacade {
 	Amplifier amplifier;
 	Tuner tuner;
 	DVDplayer dvdPlayer;
-	CDPlayer cdPlayer;
 	Projector projector;
 	TheaterLights theaterLights;
 	Screen screen;
@@ -14,7 +13,6 @@ public class HomeTheaterFacade {
 	public HomeTheaterFacade(Amplifier amplifier,
 					Tuner tuner,
 					DVDplayer dvdPlayer,
-					CDPlayer cdPlayer,
 					Projector projector,
 					TheaterLights theaterLights,
 					Screen screen,
@@ -23,7 +21,6 @@ public class HomeTheaterFacade {
 		this.amplifier = amplifier;
 		this.tuner = tuner;
 		this.dvdPlayer = dvdPlayer;
-		this.cdPlayer = cdPlayer;
 		this.projector = projector;
 		this.theaterLights = theaterLights;
 		this.screen = screen;
@@ -36,7 +33,7 @@ public class HomeTheaterFacade {
 		theaterLights.dim(10);
 		screen.down();
 		projector.on();
-		projector.wideScreenMode();
+		projector.wideScreenModeOn();
 		amplifier.on();
 		amplifier.surroundSystem();
 		amplifier.setVolume(5);
@@ -55,11 +52,3 @@ public class HomeTheaterFacade {
 		dvdPlayer.off();
 	}
 }
-
-
-
-
-
-
-
-

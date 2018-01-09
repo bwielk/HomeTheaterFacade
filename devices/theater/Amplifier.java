@@ -14,7 +14,7 @@ public class Amplifier extends Device{
 	}
 
 	public void surroundSystem() {
-		if(surroundSystemOn == false){
+		if(!surroundSystemOn){
 			surroundSystemOn = true;
 		}
 	}
