@@ -21,6 +21,7 @@ public class TheaterLightsTest {
 	
 	@Test
 	public void lightsCanBeDimmed(){
+		lights.on();
 		lights.dim(10);
 		assertEquals(10, lights.getBrightness());
 		lights.dim(20);

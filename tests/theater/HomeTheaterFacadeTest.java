@@ -28,4 +28,16 @@ public class HomeTheaterFacadeTest {
 		assertEquals(5, homeTheater.getAmplifier().getVolume());
 		assertEquals(true, homeTheater.getDvdPlayer().isMovieOn());
 	}
+	
+	@Test
+	public void devicesReactToTheScreeningOff() {
+		homeTheater.endMovie();
+		assertEquals(false, homeTheater.getPopper().isOn());
+		assertEquals(false, homeTheater.getScreen().isRevealed());
+		assertEquals(false, homeTheater.getProjector().isOn());
+		assertEquals(false, homeTheater.getProjector().isWideScreenModeOn());
+		assertEquals(false, homeTheater.getAmplifier().isOn());
+		assertEquals(false, homeTheater.getDvdPlayer().isMovieOn());
+		assertEquals(true, homeTheater.getDvdPlayer().isEjected());
+	}
 }
