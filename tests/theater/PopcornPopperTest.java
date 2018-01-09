@@ -25,6 +25,7 @@ public class PopcornPopperTest {
 	
 	@Test
 	public void canMakePopPopcorn(){
+		popper.on();
 		assertEquals("Making popcorn...", popper.pop());
 	}
 }

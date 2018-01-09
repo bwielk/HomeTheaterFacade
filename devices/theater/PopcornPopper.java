@@ -3,6 +3,9 @@ package theater;
 public class PopcornPopper extends Device{
 
 	public String pop() {
-		return "Making popcorn...";
+		if(isOn()){
+			return "Making popcorn...";
+		}
+		return "Popper is off";
 	}
 }

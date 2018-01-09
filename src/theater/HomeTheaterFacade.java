@@ -51,4 +51,32 @@ public class HomeTheaterFacade {
 		dvdPlayer.eject();
 		dvdPlayer.off();
 	}
+	
+	public Amplifier getAmplifier() {
+		return amplifier;
+	}
+
+	public Tuner getTuner() {
+		return tuner;
+	}
+
+	public DVDplayer getDvdPlayer() {
+		return dvdPlayer;
+	}
+
+	public Projector getProjector() {
+		return projector;
+	}
+
+	public TheaterLights getTheaterLights() {
+		return theaterLights;
+	}
+
+	public Screen getScreen() {
+		return screen;
+	}
+
+	public PopcornPopper getPopper() {
+		return popper;
+	}
 }
